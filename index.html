@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Game Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game">
+        <h2 id="counter">Coconuts: 0</h2>
+        
+        <button id="mainBtn" >
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/743/839/small/coconut-on-transparent-background-created-with-generative-ai-png.png" alt="CoconutImg">
+        </button>
+
+        <div id="actionBar">
+            <button id="upgrade1" class="barBtn" data-text="Increase Coconuts Per Collect (+1/Click)">Increase Coconuts Per Collect (+1/Click) (Cost: <span class="cost">25</span>) <span id="upgrade1Count">0</span></button>
+            <button id="upgrade2" class="barBtn" data-text="Hire Coconut Employee (+1 1st Upgrade/s)">Hire Coconut Employee (+1 1st Upgrade/s) (Cost: <span class="cost">25</span> 1st Upgrade) <span id="upgrade2Count">0</span></button>
+            <button id="upgrade3" class="barBtn" data-text="Buy Coconut Field (+1 Coconut Employee/s)">Buy Coconut Field (+1 Coconut Employee/s) (Cost: <span class="cost">5</span> 2nd Upgrade) <span id="upgrade3Count">0</span></button>
+            <button id="upgrade4" class="barBtn" data-text="Buy Coconut Factory (+1 Coconut Field/s)">Buy Coconut Factory (+1 Coconut Field/s) (Cost: <span class="cost">10</span> 3rd Upgrade) <span id="upgrade4Count">0</span></button>
+            <button id="settingsBtn" class="barBtn">Settings</button>
+        </div>
+
+        <div id="setMenu" class="menu">
+            <h3 style="font: bold; color: antiquewhite;">Settings</h3>
+            <button id="muteBtn" class="barBtn">Mute Sound</button>
+        </div>
+    </div>
+</body>
+</html>
